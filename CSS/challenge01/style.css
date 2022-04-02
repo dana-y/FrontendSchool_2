@@ -1,0 +1,50 @@
+body, h1, ul {
+    margin: 0px;
+}
+h1 {
+    font-size: initial;
+}
+.contents .list {
+    padding: 0;
+}
+.contents .list {
+    list-style: none;
+}
+/* 초기화 값 */
+
+body {
+    background-color: #DDDDDD;
+}
+.wrapper {
+    width: 450px;
+    background-color: #F0F0F0;
+    margin: 100px auto;
+    border-radius: 15px;
+    box-shadow: 5px 10px 20px lightgrey;
+}
+.header {
+    background-color: white;
+    padding: 30px 0;
+    border-radius: 15px 15px 0 0;
+}
+.header h1 {
+    color: #FF1593;
+    padding: 0px 20px;
+    font-size: 20px;
+    border-left: 5px solid #FF1593;
+}
+.main {
+    border-radius: 0 0 15px 15px;
+    padding: 1px 0;
+}
+
+li {
+    font-size: 14px;
+    background-color: white;
+    color: darkgray;
+    border: 2px solid lightgrey;
+    margin: 20px 30px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
