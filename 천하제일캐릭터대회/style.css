@@ -1,0 +1,217 @@
+:root {
+    --pri: #;
+    --sec: #FDEDDE;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-image: url(/메이플배경.png);
+    background-repeat: no-repeat;
+    background-size: 140%;
+    background-position-x: -60px;
+    /* opacity: 50%; */
+}
+
+/* 얼굴 및 헤어 디자인 */
+.hair {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    background-color: #98989A;
+    width: 220px;
+    height: 200px;
+    border: 6px solid black;
+    border-radius: 40% 40% 50% 50% ;
+    /* opacity: 0%; */
+}
+.face {
+    position: absolute;
+    top: 110px;
+    left: 45px;
+    width: 190px;
+    height: 140px;
+    border: 6px solid black;
+    border-radius: 30% 40% 50% 40% ;
+    background-color: var(--sec);
+    /* opacity: 60%; */
+}
+.face .rec {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 168px;
+    height: 40px;
+    background-color: var(--sec);
+    border: 6px solid black;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+}
+
+/* 귀 디자인 */
+.ear {
+    position: absolute;
+    background-color: var(--sec);
+    border: 6px solid black;
+
+}
+.ear.right {
+    top: 155px;
+    left: 230px;
+    width: 40px;
+    height: 50px;
+    border-radius: 50% 40% 50% 10%;
+}
+.ear.left {
+    top: 160px;
+    left: 27px;
+    width: 20px;
+    height: 50px;
+    border-radius: 60% 50% 0 100%;
+}
+
+/* 눈 디자인 */
+.eye {
+    position: absolute;
+    background-color: #FEFCF9;
+    /* opacity: 50%; */
+}
+.eye.left {
+    top: 150px;
+    left: 60px;
+    width: 40px;
+    height: 65px;
+    border-radius: 50% 50% 100% 110%;
+}
+.eye.right {
+    top: 150px;
+    left: 145px;
+    width: 65px;
+    height: 65px;
+    border-radius: 20% 50% 40% 40%;
+    /* opacity: 50%; */
+}
+
+/* 눈동자 디자인 */
+.eye_apple_black {
+    position: absolute;
+    background-color: black;
+        /* opacity: 100%; */
+}
+.eye_apple_black.left {
+    top: 5px;
+    left: 10px;
+    width: 25px;
+    height: 53px;
+    border-radius: 20% 20% 50% 40%; 
+}
+.eye_apple_black.right {
+    top: 5px;
+    left: 10px;
+    width: 30px;
+    height: 53px;
+    border-radius: 20% 20% 40% 50%;
+}
+.eye_apple_blue {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color:whitesmoke;
+    border-radius: 40%;
+    box-shadow: inset 2px 3px 5px 3px #132E60;
+}
+.eye_apple_blue.left {
+    width: 10px;
+    height: 15px;
+}
+.eye_apple_blue.right {
+    width: 15px;
+    height: 15px;
+}
+.eye_apple_whitedot {
+    position: absolute;
+    background-color:whitesmoke;
+}
+.eye_apple_whitedot.left {
+    top: 5px;
+    left: 3px;
+    width: 8px;
+    height: 14px;
+    border-radius: 5px;
+}
+.eye_apple_whitedot.right {
+    top: 5px;
+    left: 3px;
+    width: 16px;
+    height: 20px;
+    border-radius: 5px 10px 20px 10px;
+}
+.eyeline {
+    position: absolute;
+}
+.eyeline.left-top {
+    width: 55px;
+    height: 50px;
+    top: 147px;
+    left: 43px;
+    border: 10px solid transparent;
+    border-top: 10px solid black;
+    border-radius: 100% 120% 0 0;
+}
+.eyeline.right-top {
+    width: 85px;
+    height: 50px;
+    top: 147px;
+    left: 125px;
+    border: 10px solid transparent;
+    border-top: 10px solid black;
+    border-radius: 100% 120% 0 0;
+}
+.eyeline.left-bottom {
+    background-color: black;
+    top: 214px;
+    left: 72px;
+    width: 23px;
+    height: 6px;
+    border-radius: 2px;
+}
+.eyeline.right-bottom {
+    background-color: black;
+    top: 214px;
+    left: 165px;
+    width: 35px;
+    height: 6px;
+    border-radius: 2px;
+}
+.eyebrow {
+    position: absolute;
+    background-color: black;
+}
+.eyebrow.left {
+    top: 140px;
+    left: 56px;
+    width: 52px;
+    height: 15px;
+    border-radius: 5px 100% 5px 5px;
+    transform: rotate(10deg);
+}
+.eyebrow.right {
+    top: 138px;
+    left: 136px;
+    width: 84px;
+    height: 20px;
+    border-radius: 150% 50px 5px 5px;
+    transform: rotate(-8deg);
+}
+
+/* 입 디자인 */
+.mouth {
+    position: absolute;
+    top: 117px;
+    left: 62px;
+    background-color: black;
+    width: 15px;
+    height: 10px;
+    border-radius: 3px;
+}    
