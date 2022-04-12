@@ -1,0 +1,45 @@
+body, h1, h2, div, p, button {
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    font-size: inherit;
+}
+/* 초기화 */
+
+body {
+    background-color: #E5E5E5;
+}
+.wrapper {
+    width: 520px;
+    margin: 50px auto;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.contents {
+    padding: 25px 24px;
+}
+/* header 스타일 */
+.header {
+    text-align: center;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #C4C4C4;
+}
+.header-tit {
+    margin-top: 20px;
+
+}
+.header-close-button {
+    float: right;
+    vertical-align: middle;
+}
+.header-close-img {
+    width: 16px;
+    height: 16px;
+}
+
+/* main 스타일 */
+
+/* footer 스타일 */
