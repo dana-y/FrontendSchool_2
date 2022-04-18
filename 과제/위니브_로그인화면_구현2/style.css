@@ -1,0 +1,227 @@
+/* 초기설정 */
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+.blind {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* 초기화 */
+body, h1, h2, div, p, button, ul {
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    font-size: inherit;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* layout */
+body {
+    background-color: #E5E5E5;
+}
+.wrapper {
+    width: 520px;
+    margin: 50px auto;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.contents {
+    padding: 25px 24px;
+}
+/* header 스타일 */
+.header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #C4C4C4;
+}
+.header-tit {
+    display: inline-block;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* main 스타일 */
+.main-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+.input-id, .input-pw, .main-login-button {
+    display: block;
+    width: 100%;
+    box-sizing : border-box;
+    border-radius: 5px;
+    padding: 14px 0;
+}
+.main .input-id, .main .input-pw {
+    padding-left: 15px;
+    border: 1px solid #C4C4C4;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+.input-id {
+    margin-bottom: 10px;
+}
+.login-stay {
+    width: 100%;
+    float: left;
+    margin-top: 17px;
+    margin-bottom: 21px;
+}
+.login-stay-label::before {
+    content: '';
+    background-image: url(./images/check-box.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    float: left;
+}
+.login-stay--checkbox:checked+.login-stay-label::before {
+    background-image: url(./images/checked-box.png);
+}
+.login-stay-label {
+    float: left;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #767676;
+    cursor: pointer;
+}
+
+.main-login-button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding: 13px 0;
+    border: none;
+    margin-top: 21px;
+    margin-bottom: 20px;
+    background-color: #2F80ED;
+}
+.main-find {
+    text-align: center;
+}
+.main-find a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #767676;
+}
+.main-find-bar::after {
+    content: '|';
+    margin-left: 12px;
+    margin-right: 8px;
+    vertical-align: middle;
+    color: #767676;
+    display: inline-block;
+}
+.main-or-txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #767676;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.main-or-txt::before {
+    content: '';
+    width: 210px;
+    height: 1px;
+    background: #C4C4C4;
+    float: left;
+    margin-top: 8px;
+}
+.main-or-txt::after {
+    content: '';
+    width: 210px;
+    height: 1px;
+    background: #C4C4C4;
+    float: right;
+    margin-top: 8px;
+}
+
+/* footer 스타일 */
+.footer-login-other-id a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: #767676;
+    display: block;
+    padding: 14px 0;
+    margin: 10px 0;
+}
+.login-google {
+    border: 1px solid #767676;
+}
+.login-google::before {
+    content: '';
+    width: 21px;
+    height: 21px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url(/images/google.png);
+    margin-left: 19px;
+    float: left;
+}
+.login-facebook {
+    border: 1px solid #2D9CDB;
+}
+.login-facebook::before {
+    content: '';
+    width: 21px;
+    height: 21px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url(/images/facebook.png);
+    margin-left: 23px;
+    float: left;
+}
+.login-naver {
+    border: 1px solid #00BF18;
+}
+.login-naver::before {
+    content: '';
+    width: 21px;
+    height: 21px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url(/images/naver.png);
+    margin-left: 19px;
+    float: left;
+}
+.login-kakao {
+    border: 1px solid #F2C94C;
+}
+.login-kakao::before {
+    content: '';
+    width: 21px;
+    height: 21px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url(/images/kakao.png);
+    margin-left: 19px;
+    float: left;
+}
