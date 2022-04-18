@@ -1,0 +1,97 @@
+body, h1, h2, header p, main p, fieldset{
+    margin: initial;
+}
+footer button {
+    padding: initial;
+    border: 0;
+}
+h1, h2 {
+    font-size: inherit;
+}
+/* 초기화 */
+body {
+    background-color: #203239;
+}
+legend {
+    font-size: 20px;
+    font-weight: bold;
+}
+fieldset {
+    border: 0;
+}
+.wrapper {
+    background-color: #EEEDDE;
+    border-radius: 20px;
+    overflow: hidden;
+}
+header, main, footer {
+    padding: 35px;
+}
+.header {
+    padding-bottom: 0px;
+    border-top: 30px solid #E0DDAA ;
+}
+header h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 20px;
+    color: #203239;
+    margin-bottom: 15px;
+}
+main fieldset {
+    background-color: white;
+    margin: 30px 0;
+    padding: 15px;
+    border: 2px solid #141E27;
+    border-radius: 10px;
+}
+main {
+    padding-top: 0;
+}
+legend {
+    display: none;
+}
+main label {
+    display: block;
+}
+main input {
+    margin: 5px 10px;
+    margin-left: 0;
+}
+section {
+    padding: 20px;
+}
+.txt_input input, textarea {
+    padding: 10px;
+    border-radius: 3px;
+}
+.txt_input textarea {
+    width: 470px;
+}
+.txt_input input {
+    width: 300px;
+}
+.wrapper {
+    width: 600px;
+    margin: 100px auto;
+}
+.wrapper footer {
+    padding-top: 0;
+}
+footer button {
+    margin: 0 15px;
+}
+footer .submit_btn {
+    width: 70px;
+    border-radius: 7px;
+    background-color: #141E27;
+    color: #EEEDDE;
+    padding: 10px;
+}
+footer .reset_btn {
+    background-color: inherit;
+    color: #141E27;
+    display: inline-block;
+    float: right;
+}

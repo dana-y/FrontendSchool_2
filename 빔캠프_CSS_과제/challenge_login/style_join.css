@@ -1,0 +1,136 @@
+body, .logo p, h2, main p  {
+    margin: initial;
+}
+.button .btn_txt, button, input {
+    margin: initial;
+    padding: inherit;
+    border:inherit;
+}
+/* 초기화 */
+body {
+    background-color: #FAFAFA;
+}
+.logo p {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+.wrapper {
+    width: 760px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.wrapper header {
+    padding: 0 105px;
+    margin: 50px 0;
+}
+.wrapper main {
+    padding: 0 105px;
+}
+main section h2 {
+    font-size: 25px;
+    display: inline;
+}
+section .title {
+    margin: 30px 0;
+}
+section {
+    font-size: 18px;
+}
+.join input {
+    font-size: 17px;
+    color: #D5D4D5;
+    width: 500px;
+    padding:20px 20px;
+    border: 1px solid lightgrey ;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.join p {
+    display: block;
+}
+.join div {
+    margin: 50px 0;
+}
+section {
+    margin: 50px 0;
+}
+label {
+    display: block;
+}
+main input {
+    cursor: auto;
+}
+.phone_num input {
+    width: 380px;
+}
+.phone_num button {
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.phone_num .num_chk input {
+    width: 300px;
+}
+.phone_num .phone_number button {
+    margin-left: 5px;
+    width: 100px;
+    background-color: white;
+    border: 1px solid #E67800;
+    color: #E67800;
+}
+.phone_num .num_chk button {
+    margin-left: 5px;
+    background-color: #f3be85;
+    width: 160;
+    color: white;
+}
+.agree input, p {
+    display: inline;
+}
+.agree a {
+    margin-left: 5px;
+}
+.agree p {
+    margin-left: 3px;
+}
+.agree label {
+    margin: 5px 0;
+}
+.agree .all-agree {
+    border-bottom: 2px solid #D5D4D5;
+    padding: 15px 0;
+}
+.agrees {
+    margin: 40px 0 ;
+}
+.agrees a {
+    color: #A9A9A9;
+}
+
+.wrapper footer {
+    padding: 20px;
+}
+footer form .button {
+    width: 520px;
+    background-color: #f3be85;
+    display: block;
+    font-size: 20px;
+    padding: 20px 0;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.btn_txt {
+    color: white
+}
