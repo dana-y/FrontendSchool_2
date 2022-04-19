@@ -174,48 +174,45 @@ body {
     padding: 14px 0;
     margin: 10px 0;
 }
+
 .footer-login-other-id a::before {
     content: '';
-    width: 22px;
-    height: 22px;
+    width: 28px;
+    height: 28px;
     background-repeat: no-repeat;
     background-image: url(./images/logos.png);
     margin-left: 12px;
     float: left;
-}
-/* 레티나 레이아웃 */
-.footer-login-other-id a.retina::before {
-    background-image: url(./images/logos_size2.jpg);
-    background-size: 117px 84px;
-}
+} 
+
 .login-google {
     border: 1px solid #767676;
 }
-.login-google::before {
-    background-position:-52px -10px;
-}
-
 .login-facebook {
     border: 1px solid #2D9CDB;
 }
-.login-facebook::before {
-    width: 13px;
-    height: 24px;
-    background-position: -94px -10px;
-}
-
 .login-naver {
     border: 1px solid #00BF18;
 }
-.login-naver::before {
-    background-position:-10px -10px;
-}
-
 .login-kakao {
     border: 1px solid #F2C94C;
 }
-.login-kakao::before {
-    width: 21px;
-    height: 21px;
-    background-position: -10px -52px;
+
+.login-google::before {
+    background-position:-10px -10px;
 }
+.login-facebook::before {
+    background-position: -10px -58px;
+}
+.login-naver::before {
+    background-position:-10px -106px;
+}
+.login-kakao::before {
+    background-position: -10px -154px;
+}
+
+/* 레티나 레이아웃*/
+/* .footer-login-other-id.retina a::before {
+    background-image: url(./images/레티나_logos.png);
+    background-size: 48px 192px;
+}  */
