@@ -173,55 +173,43 @@ body {
     padding: 14px 0;
     margin: 10px 0;
 }
+.footer-login-other-id a::before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url(./images/logos.png);
+    margin-left: 12px;
+    float: left;
+}
 .login-google {
     border: 1px solid #767676;
 }
 .login-google::before {
-    content: '';
-    width: 21px;
-    height: 21px;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-image: url(/images/google.png);
-    margin-left: 19px;
-    float: left;
+    background-position:-52px -10px;
 }
 .login-facebook {
     border: 1px solid #2D9CDB;
 }
+
 .login-facebook::before {
-    content: '';
-    width: 21px;
-    height: 21px;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-image: url(/images/facebook.png);
-    margin-left: 23px;
-    float: left;
+    width: 13px;
+    height: 24px;
+    background-position: -94px -10px;
 }
+
 .login-naver {
     border: 1px solid #00BF18;
 }
 .login-naver::before {
-    content: '';
-    width: 21px;
-    height: 21px;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-image: url(/images/naver.png);
-    margin-left: 19px;
-    float: left;
+    background-position:-10px -10px;
 }
 .login-kakao {
     border: 1px solid #F2C94C;
 }
 .login-kakao::before {
-    content: '';
     width: 21px;
     height: 21px;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-image: url(/images/kakao.png);
-    margin-left: 19px;
-    float: left;
+    background-position: -10px -52px;
 }
