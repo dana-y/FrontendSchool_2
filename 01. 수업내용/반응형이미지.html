@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 백그라운드</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body{
+            margin: 0;
+        }
+        article{
+            width: 100vw;
+            height: 100vh;
+            background-image: url(./chihiro045.jpg);
+            background-repeat: no-repeat;
+            /* contain은 반응형이지만 원본 이미지 크기가 최대 */
+            /* background-size: contain; */
+            /* cover는 여백없이 꽉 채워지지만 반응형이 아니다 */
+            background-size: cover;
+            /* position center를 넣으면 반응형인 것처럼 움직임. 이미지 중심을 기준으로 두고 화면이 조절됨 */
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+        <article>
+
+        </article>
+</body>
+
+</html>
