@@ -1,0 +1,10 @@
+$color-pallette: red, green, blue, pink;
+
+@each $color in $color-pallette {
+    $i:index($color-pallette, $color);
+    .box-color:nth-child(#{$i}){
+        background-color: $color;
+        width: 100px;
+        height: 100px;
+    }
+}
