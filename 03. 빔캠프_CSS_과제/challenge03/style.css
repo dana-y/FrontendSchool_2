@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
   background-color: black;
 }
+p {
+  word-break: keep-all;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  padding: 0;
+}
+/* 전체 layout 시작 */
 .wrapper {
-  width: 1100px;
+  width: 1300px;
   margin: 3rem auto;
   display: flex;
   gap: 2rem;
@@ -10,21 +23,36 @@ body {
 .wrapper::after {
   clear: both;
 }
-p {
-  
-}
-/* nav 레이아웃 시작 */
-.nav-list {
-  color: #fff;
+.nav-wrapper {
   flex-basis: 0;
   flex-grow: 1;
 }
+.main-wrapper {
+  flex-basis: 0;
+  flex-grow:6;
+}
+
+
+/* nav 레이아웃 시작 */
+.logo {
+  width: 150px;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.nav-list {
+  color: #fff;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.nav-list li {
+  margin-bottom: 1rem;
+}
+.nav-list a {
+  color: #fff;
+  font-size: 1.2rem;
+}
 /* main 레이아웃 시작 */
 .main {
-  /* width: 920px; */
-  flex-basis: 0;
-  flex-grow: 2;
-  /* margin: 0 auto; */
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -44,13 +72,13 @@ p {
   left: 0;
   width: 100%;
 }
-.contents {
-  background-color: #111111;
+.main-bottom-contents {
   position: absolute;
   width: auto;
   margin-top: -20%;
   padding: 4rem 2rem 3rem;
   z-index: 10;
+  background-color: #111111;
   background: linear-gradient(
     rgba(17, 17, 17, 0) 0%,
     rgba(17, 17, 17, 0.3) 5%, 
@@ -60,17 +88,69 @@ p {
     rgba(17, 17, 17, 1) 25%, 
     #111111 100%);
 }
+.mv-textbox {
+  overflow: hidden;
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+}
 .mv-tit {
   color: #fff;
-  font-size: 2rem;
-  width: 60%;
+  font-size: 2.5rem;
   float: left;
 }
 .mv-info {
   color: #fff;
-  width: 60%;
-  font-size: 0.6rem;
+  font-size: 10px;
   font-weight: 200;
   float: left;
 }
 
+/* 오른쪽 info layout 시작 */
+.right-sec {
+  width: 230px;
+  display: inline-block;
+  color: #fff;
+  margin-left: 170px;
+}
+.right-sec h2 {
+  font-size: 10px;
+  /* font-weight: 200; */
+}
+.right-sec section {
+  margin-bottom: 2rem;  
+}
+.ganre-list {
+  color: #fff;
+  padding-left: 0;
+}
+.ganre-list li {
+  display: inline-block;
+  background-color: #222222;
+  border-radius: 5px;
+  padding: 0 10px;
+  color: #888888;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+  margin-right: 5px;
+  font-size: 10px;
+}
+
+.sprite {
+  position: relative;
+  background-image: url(./images/happy.png);
+  background-repeat: no-repeat;
+  background-size: 200px 88px;
+  background-position: 0 0;
+	width: 200px;
+	height: 44px;
+}
+.sprite::after {
+  content: '';
+  position: absolute;
+	background: url(./images/happy.png) no-repeat;
+  background-position: bottom left;
+  background-size:inherit;
+	width: 120px;
+	height: inherit;
+}
