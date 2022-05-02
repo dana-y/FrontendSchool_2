@@ -1,0 +1,76 @@
+body {
+  background-color: black;
+}
+.wrapper {
+  width: 1100px;
+  margin: 3rem auto;
+  display: flex;
+  gap: 2rem;
+}
+.wrapper::after {
+  clear: both;
+}
+p {
+  
+}
+/* nav 레이아웃 시작 */
+.nav-list {
+  color: #fff;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+/* main 레이아웃 시작 */
+.main {
+  /* width: 920px; */
+  flex-basis: 0;
+  flex-grow: 2;
+  /* margin: 0 auto; */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.img-cover {
+  padding-top: 56.25%;
+  position: relative;
+  background-image: url(./images/cover_new.svg);
+  background-size: contain;
+  background-position: top;
+
+}
+.mv-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.contents {
+  background-color: #111111;
+  position: absolute;
+  width: auto;
+  margin-top: -20%;
+  padding: 4rem 2rem 3rem;
+  z-index: 10;
+  background: linear-gradient(
+    rgba(17, 17, 17, 0) 0%,
+    rgba(17, 17, 17, 0.3) 5%, 
+    rgba(17, 17, 17, 0.5) 10%,
+    rgba(17, 17, 17, 0.7) 15%, 
+    rgba(17, 17, 17, 0.8) 20%, 
+    rgba(17, 17, 17, 1) 25%, 
+    #111111 100%);
+}
+.mv-tit {
+  color: #fff;
+  font-size: 2rem;
+  width: 60%;
+  float: left;
+}
+.mv-info {
+  color: #fff;
+  width: 60%;
+  font-size: 0.6rem;
+  font-weight: 200;
+  float: left;
+}
+
