@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+      //문자열 (String)
+
+      let txt = 'ABCDEFGHIJKLMNABC';
+      // 밑에 \ 얘는 이스케이프 문자. 
+      let text_two = 'mom said \'hello world\'';
+      let text_three = "mom said 'hello world'";
+
+      // number를 12sdf2817fyi로 바꿔보기 -> parseInt 권장하는 이유
+      let number = '100';
+
+      document.write(number + number, '<br>');
+      document.write(Number(number) + Number(number), '<br>');
+      document.write(parseInt(number) + parseInt(number), '<br>');
+      document.write(+(number) + +(number), '<br>');
+
+      document.write(`txt : ${txt} <br>`);
+
+      document.write(`${number} + ${number} = ${number*2} <br>`);
+
+      document.write(`txt.length : ${txt.length} <br>`);
+      document.write(`txt[1] : ${txt[1]} <br>`);
+      document.write(txt.indexOf("F"), '<br>');
+      document.write(`txt.indexOf("F") : ${txt.indexOf("F")} <br>`);
+      document.write(`txt.search("F") : ${txt.search("F")} <br>`);
+
+      document.write(`txt.indexOf("FG") : ${txt.indexOf("FG")} <br>`);
+      document.write(`txt.search("FG") : ${txt.search("FG")} <br>`);
+
+      // 없는 값은 -1 출력
+      document.write(`txt.indexOf("Z") : ${txt.indexOf("Z")} <br>`);
+      document.write(`txt.search("Z") : ${txt.search("Z ")} <br>`);
+
+      document.write(txt.lastIndexOf("FGH") + '<br>');
+
+      // slice(시작인덱스, 종료인덱스) : 시작인덱스부터 종료인덱스 -1까지 반환합니다.
+      document.write(txt + '<br>');
+      document.write(txt.slice(0,3) + '<br>');
+      document.write(txt.substring(0,3) + '<br>');
+      document.write(txt.substr(0,3) + '<br>');
+
+      document.write('abcdef'.replace('cde','daeun'));
+    </script>
+</body>
+
+</html>
