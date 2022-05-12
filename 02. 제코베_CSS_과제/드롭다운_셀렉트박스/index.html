@@ -87,16 +87,16 @@
 <body>
     <article class="wrapper">
         <h1 class="blind">최애 프로그래밍 언어를 선택해주세요.</h1>
-        <form action="" method="get">
+        <!-- <form action="" method="get" class="form"> -->
             <button class="btn-select">최애 프로그래밍 언어</button>
-            <ul class="list-lans ">
+            <ul class="list-lans">
                 <li><button type="button" class="lans">Java</button></li>
                 <li><button type="button" class="lans">JavaScript</button></li>
                 <li><button type="button" class="lans">Python</button></li>
                 <li><button type="button" class="lans">C#</button></li>
                 <li><button type="button" class="lans">C/C+</button></li>
             </ul>
-        </form>
+        <!-- </form> -->
     </article>
     
     <script>
@@ -104,17 +104,18 @@
         const lans = document.querySelectorAll(".lans")
         const btnSelect = document.querySelector(".btn-select");
 
-
-
-        btnSelect.addEventListener("click", (e) => {
-            for(let i = 0; i < btnSelect.length; i++){
-                if(e.target === lans[i]){
-                    btnSelect.innerHTML('hello');
-                    btnSelect.classList.remove("on");
-                }
-                btnList.classList.toggle("on");
-            }
+        btnSelect.addEventListener("click", (e) =>{
+            btnSelect.classList.toggle("on");
+            console.log(btnList[0]);
         })
+        
+        btnList.addEventListener("click",(e) =>{
+            btnSelect.innerText = event.target.innerText;
+            btnSelect.classList.toggle("on");
+        } )
+
+
+
 
     </script>
 </body>
