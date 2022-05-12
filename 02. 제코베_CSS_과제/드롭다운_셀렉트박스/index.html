@@ -75,12 +75,12 @@
             background: #F8E4FF;
             border-radius: 8px;
         }
-        /* on을 추가하면 ul이 나옵니다 */
-        .btn-select.on+.list-lans {
-            display: block;
-        }
         .list-lans {
             display: none;
+        }
+        /* on을 추가하면 ul이 나옵니다 */
+        .btn-select.on + .list-lans {
+            display: block;
         }
     </style>
 </head>
@@ -89,14 +89,33 @@
         <h1 class="blind">최애 프로그래밍 언어를 선택해주세요.</h1>
         <form action="" method="get">
             <button class="btn-select">최애 프로그래밍 언어</button>
-            <ul class="list-lans">
-                <li><button type="button">Java</button></li>
-                <li><button type="button">JavaScript</button></li>
-                <li><button type="button">Python</button></li>
-                <li><button type="button">C#</button></li>
-                <li><button type="button">C/C+</button></li>
+            <ul class="list-lans ">
+                <li><button type="button" class="lans">Java</button></li>
+                <li><button type="button" class="lans">JavaScript</button></li>
+                <li><button type="button" class="lans">Python</button></li>
+                <li><button type="button" class="lans">C#</button></li>
+                <li><button type="button" class="lans">C/C+</button></li>
             </ul>
         </form>
     </article>
+    
+    <script>
+        const btnList = document.querySelector(".list-lans");
+        const lans = document.querySelectorAll(".lans")
+        const btnSelect = document.querySelector(".btn-select");
+
+
+
+        btnSelect.addEventListener("click", (e) => {
+            for(let i = 0; i < btnSelect.length; i++){
+                if(e.target === lans[i]){
+                    btnSelect.innerHTML('hello');
+                    btnSelect.classList.remove("on");
+                }
+                btnList.classList.toggle("on");
+            }
+        })
+
+    </script>
 </body>
 </html>
