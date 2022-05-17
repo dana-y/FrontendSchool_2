@@ -18,6 +18,15 @@
     <script>
         const center = document.querySelector(".list-item");
 
+        // 제목 만들기
+        const elTit = document.createElement("h1");
+        const App = document.querySelector("#app");
+
+        elTit.innerText = "🌟천방지축 얼렁뚱땅 빙글빙글 돌아가는 승주의 하루🌟"
+        App.appendChild(elTit);
+        const Tit = document.querySelector("h1");
+        Tit.classList.add("tit")
+
         const arrPic = ["./images/1.png", "./images/2.png", "./images/3.png", "./images/4.png", "./images/5.jpg", "./images/6.jpg", "./images/7.jpg"]
 
         arrPic.forEach((item, index) => {
@@ -38,6 +47,17 @@
             }
         });
 
+        const angle = 360/items.length;
+        let currAngle = 0;
+
+        document.addEventListener("click", (item) => {
+            if(window.innerWidth/2 > event.clientX) {
+                currAngle += angle;
+            } else {
+                currAngle -= angle;
+            }
+            center.style.transform = `translate(-50%, -50%) rotateY(${currAngle}deg)`;
+        })
 
     </script>
 </body>
