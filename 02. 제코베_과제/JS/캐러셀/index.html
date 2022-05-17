@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,6 +15,30 @@
         <ul class="list-item">
         </ul>
     </article>
-</body>
+    <script>
+        const center = document.querySelector(".list-item");
 
+        const arrPic = ["./images/1.png", "./images/2.png", "./images/3.png", "./images/4.png", "./images/5.jpg", "./images/6.jpg", "./images/7.jpg"]
+
+        arrPic.forEach((item, index) => {
+            const elLi = document.createElement("li");
+            elLi.innerHTML = `<img src = "${item}" alt ="승주사진${index+1}">`;
+            center.appendChild(elLi);
+        });
+
+        const items = center.querySelectorAll("li");
+
+        const radius = items[0].offsetWidth*items.length / 3.14 /2;
+
+        items.forEach((item, index) => {
+            if(index === 0) {
+                item.style.transform = `rotateY(0) translateZ(${radius}px)`;
+            } else {
+                item.style.transform = `rotateY(${360/items.length * index}deg) translateZ(${radius}px`;
+            }
+        });
+
+
+    </script>
+</body>
 </html>
