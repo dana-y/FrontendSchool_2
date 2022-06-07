@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+  <article id="app">
+    <form action="" method="get">
+      <ul class="center">
+        
+      </ul>
+    </form>
+  </article>
+
+  <script>
+    
+    const elLi = document.createElement("li");
+    const elBtn = document.createElement("button");
+    const elInput = document.createElement("input");
+
+    const Center = document.querySelector(".center");
+
+    //li 생성 함수
+    function addLi(parent, text, classname) {
+      elLi.innerText = text;
+      elLi.classList.add(classname);
+      parent.appendChild(elLi);
+    }
+
+    addLi(Center, "hey", "li")
+    //button 생성 함수
+    // function addBtn(parent, text, classname) {
+    //   // this.parent = parent;
+    //   // this.text = text;
+    //   elBtn.innerText = text;
+    //   elBtn.classList.add(classname);
+    //   parent.appendChild(elBtn);
+      
+    // }
+
+    //input 생성 함수
+    function addInput(parent, classname, type) {
+      elInput.classList.add(classname);
+      elInput.setAttribute("type", type);
+      parent.appendChild(elInput);
+    }
+    
+    // 밑에 페이지 첫 설명에 참조하고 있으면 위치 이동해서 그런듯!
+    // https://developer.mozilla.org/ko/docs/Web/API/Node/appendChild
+    addInput(Center, "input-btn", "button");
+    addInput(Center, "input-txt", "text");
+
+
+    
+    // const myAddInput = document.querySelector(".add-input");
+    // const myAddBtn = document.querySelector(".add-btn");
+
+    
+    // let liText =  Center.getElementsByClassName("add-input");
+    // //add 버튼 클릭하면 추가!
+    // myAddBtn.addEventListener("click", () => {
+    //   console.log(liText.value);
+      
+    //   // addLi(parent, myAddInput.innerText);
+    // });
+
+  </script>
+</body>
+</html>
