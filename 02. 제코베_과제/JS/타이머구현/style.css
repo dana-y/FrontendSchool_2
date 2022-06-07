@@ -62,7 +62,13 @@ body {
 .timer-box input {
   cursor: pointer;
 }
-
+/* .time input+input::before {
+  content: "";
+  background-image: url(./images/dot.svg);
+  width: 1px;
+  height: auto;
+  float: left;
+} */
 .start-button, .reset-button {
   width: 112px;
   height: 48px;
