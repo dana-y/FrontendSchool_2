@@ -1,0 +1,87 @@
+body, h1, h2, p, strong, input {
+  padding: 0;
+  margin: 0;
+}
+input {
+  background-color: inherit;
+  border: none;
+}
+body {
+  background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
+  text-align: center;
+}
+.logo {
+  margin: 72px 0 0;
+}
+.timer-box {
+  width: 400px;
+  box-sizing: border-box;
+  margin: 60px auto 0;
+  padding: 48px 58px 40px;
+  background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+  border-radius: 16px;
+}
+.timer-box h1 {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #3D538A;;
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+  margin: 33px 0  40px;
+}
+.time div {
+  width: 80px;
+}
+
+.timer-box h2 {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-size: 12px;
+  color: #A5B6EE;
+}
+
+.time div input {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #FFFFFF;
+  background-image: url(./images/box.svg);
+}
+
+.timer-box input {
+  cursor: pointer;
+}
+
+.start-button, .reset-button {
+  width: 112px;
+  height: 48px;
+}
+.start-button {
+  margin-right: 8px;  
+  background-image: url(./images/button/start-disabled.svg);
+}
+.reset-button {
+  background-image: url(./images/button/reset-disabled.svg);
+
+}
+
+footer cite {
+  display: inline-block;
+  font-style: normal;
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-size: 14px;
+  color: #8596BF;
+  margin: 60px 0 103px;
+}
