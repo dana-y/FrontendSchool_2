@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Button = ({ type = 'button', children = '' }) => (
-  <button type={type}>{children}</button>
+const Button = ({ type = 'button', }) => (
+  <button type={type}></button>
 )
 
 export default Button;
