@@ -1,4 +1,4 @@
-export const data = {
+{
 	"blog": {
 		"mainTitle": "My BLOG",
 		"subTitle": "React & Node",
