@@ -1,13 +1,23 @@
-import '../../../styles/global.css'
+import React from 'react'
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+import logoImg from '../../../assets/Logo.svg'
 
-const Logo = () => {
-  <div className="max-width">
-    <h1>
-      <a href="./">
-        <img src="../../../assets/Logo.svg" alt="My Blog" />
-      </a>
-    </h1>
-  </div>
+const LogoH1 = styled.h1 `
+  font-size: 3rem;
+`
+const LogoLink = styled(Link) `
+	display: block;
+	padding: 0.4rem;
+	margin-left: -0.4rem;
+`
+
+export default function Logo(){
+  return(
+    <LogoH1>
+      <LogoLink href="./">
+        <img src={logoImg} alt="My Blog" />
+      </LogoLink>
+    </LogoH1>
+    )
 }
-
-export default Logo;
