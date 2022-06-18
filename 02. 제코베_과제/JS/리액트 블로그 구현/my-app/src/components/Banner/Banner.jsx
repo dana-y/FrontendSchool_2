@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import backgroundImg from '../../assets/background.jpg'
 
 const BannerContent = styled.div`
 	position: relative;
-	background: url(../assets/background.jpg) no-repeat 50% 50% / cover;
+	background: url(${backgroundImg}) no-repeat 50% 50% / cover;
 	height: 27em;
 	margin-bottom: -7em;
 `
@@ -17,6 +18,26 @@ const BannerContents = styled.div`
 	padding: 7rem 0 14.5rem;
 	text-align: center;
 	color: var(--gray-background-light);
+	::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: calc((100% - 1224px) / 2 + 44rem);
+		height: 100%;
+		background: rgba(40, 48, 63, 0.5);
+	}
+	@media (max-width: 1280px) {
+		width: 44rem;
+	}
+	@media (max-width: 768px) {
+		width: 100%;
+		::before {
+			width: 100%;
+		}
+		margin: 0 auto;
+	}
 `
 const BannerP = styled.p`
   position: relative;
