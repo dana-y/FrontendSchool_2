@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyleReset = createGlobalStyle`
   
-html,
+
 body,
 div,
 span,
@@ -89,6 +89,9 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}
+* { 
+font-family: Pretendard,  sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article,

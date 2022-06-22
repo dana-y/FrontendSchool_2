@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
-import profileImg from '../../../assets/profile.jpg'
+// import profileImg from '../../../assets/profile.jpg'
 import modifyIcon from '../../../assets/icon-modify.svg'
 import logoutIcon from '../../../assets/icon-logout.svg'
 
@@ -51,6 +51,7 @@ const HeaderBtn = styled.button`
 	height: 4rem;
 	border: 0;
 	border-radius: var(--border-radius);
+	
 	text-transform: uppercase;
 	font-weight: bold;
 	line-height: 1;
@@ -71,7 +72,7 @@ export default function LoginInfo (){
     <LoginUl>
       <li>
         <ProfileLink to="/">
-          <ProfileImg src={profileImg} alt="My Page" />
+          <ProfileImg src='/assets/profile.jpg' alt="My Page" />
         </ProfileLink>
       </li>
       <li>

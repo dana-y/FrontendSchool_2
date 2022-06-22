@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-// import data from '../../../../public/data.json'
 
 const AuthorWrap = styled.dl`
 	display: flex;
